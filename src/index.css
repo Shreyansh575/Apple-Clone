@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: font1;
+  src: url(../public/Fonts/sf-pro-display_bold.woff2);
+  
+}
+@font-face {
+  font-family: font2;
+  src: url(../public/Fonts/sf-pro-display_semibold.woff2);
+  
+}
+@font-face {
+  font-family: font3;
+  src: url(../public/Fonts/sf-pro-icons_light.woff2);
+  
+}
+@font-face {
+  font-family: font4;
+  src: url(../public/Fonts/sf-pro-icons_regular.woff2);
+  
+}
+@font-face {
+  font-family: font5;
+  src: url(../public/Fonts/sf-pro-text_light.woff2);
+  
+}
+@font-face {
+  font-family: font6;
+  src: url(../public/Fonts/sf-pro-text_regular.woff2);
+  
+}
+@font-face {
+  font-family: font7;
+  src: url(../public/Fonts/sf-pro-text_semibold.woff2);
+  
+}
+@font-face {
+  font-family: font8;
+  src: url(../public/Fonts/sf-pro-text_ultralight.woff2);
+  
+}
