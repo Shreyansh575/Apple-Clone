@@ -1,6 +1,6 @@
 {
   "name": "apple",
-  "hoempage":"https://Shreyansh575.github.io/Apple_Clone/",
+  "hoempage": "https://Shreyansh575.github.io/Apple-Clone/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,6 +15,7 @@
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@tailwindcss/vite": "^4.1.18",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.14.2",
     "lucide": "^0.562.0",
     "lucide-react": "^0.562.0",
