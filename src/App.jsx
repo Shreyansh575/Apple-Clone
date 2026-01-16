@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
 import Mac from './Pages/Mac'
 import Tvhome from './Pages/Tvhome'
+import Ipad from './Pages/Ipad'
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/Mac' element={<Mac/>}/>
         <Route path='/Tv&Home' element={<Tvhome/>}/>
+        <Route path='/ipad' element={<Ipad/>}/>
       </Routes>
     </div>
   )

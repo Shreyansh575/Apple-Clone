@@ -77,7 +77,7 @@ const Autoslider = () => {
     
      const fn = gsap.to(slideRef.current, {
         xPercent: -600,
-        duration: 45,
+        duration: 205,
         ease: "linear",
         repeat: -1,
       });
