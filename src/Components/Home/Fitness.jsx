@@ -71,7 +71,7 @@ const Fitness = () => {
         setcount(count-350)
         console.log(count);
       }}><ChevronRight size={50}/></div>
-      <div></div>
+    
     </div>
   )
 }

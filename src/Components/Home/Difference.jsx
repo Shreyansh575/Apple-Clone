@@ -58,7 +58,7 @@ const Difference = () => {
 
   {content.map((elem)=>{
     return(
-        <div className="relative bg-amber-300 rounded-2xl  h-60 min-w-80 font-[font2] text-[20px]">
+        <div className="relative bg-white rounded-2xl  h-60 min-w-80 font-[font2] text-[20px]">
           <div>
   <div className={`text-[${elem.color}]`}>
           <div className="mt-5 ml-10">{elem.svg }</div> 
