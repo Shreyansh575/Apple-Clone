@@ -149,11 +149,13 @@ const Midcontent = () => {
           }} className=""><ChevronRight size={30}/></div>
         </div>
 <div className="overflow-x-hidden ">
-        <div ref={scrollref} className="flex ml-30 gap-5 mt-5  ">
+        <div ref={scrollref} className="flex ml-30 gap-5 mt-5 max-md:overflow-x-auto max-md:ml-3  ">
+
+
             {data.map((elem)=>{
               return(
               <div ref={parentRef} className="">
-                <img src={elem.img} className="h-[50vh] min-w-[30vw] max-md:min-w-[80vw] max-md:h-[40vh] rounded-3xl object-cover" alt="" />
+                <img src={elem.img} className="h-[50vh] min-w-[30vw] max-md:overflow-y-hidden max-md:min-w-[80vw] max-md:h-[40vh] rounded-3xl object-cover" alt="" />
                 
 
                 <div className="mt-10 text-center font-[font2] text-3xl">{elem.name}</div>
@@ -161,7 +163,7 @@ const Midcontent = () => {
                 <div className="mt-3 px-5 text-center text-[20px] font-[font5] ">{elem.info}</div>
                 <div className="mt-3 px-20 text-center text-[20px] font-[font2] ">{elem.price}</div>
 
-                <div className="flex text-2xl mt-10 space-x-10 items-center max-md:text-[15px] max-md:space-x-6 px-20">
+                <div className="flex text-2xl mt-10 space-x-10 items-center max-md:text-[15px] max-md:space-x-6 max-md:ml-13 max-md:px-6 px-20">
                   <div className="bg-blue-500 px-3 py-2 rounded-full max-md:px-1  text-white">Learn More</div>
                   <div className="text-blue-700 text-[20px] flex text-center hover:underline">Buy <ChevronRight /></div>
                 </div>

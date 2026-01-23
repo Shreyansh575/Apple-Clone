@@ -83,16 +83,16 @@ const Whyapple = () => {
     })
   },[count])
   return (
-    <div ref={scrollenterRef} className=" p-1 h-[140vh] bg-[#dddde0]   mt-38">
+    <div ref={scrollenterRef} className=" max-md:overflow-y-hidden p-1 h-[140vh] bg-[#dddde0] max-md:h-[80vh]   mt-38">
       
 
       
-      <div className="ml-30 mt-10 max-md:ml-5  text-6xl max-md:text-[35px] leading-12 font-[font7]">
+      <div className="ml-30 mt-10 max-md:ml-5  text-6xl max-md:text-[32px] leading-12 font-[font7]">
         <div>Why Apple is the best</div>
         <div>Place to buy Mac.</div>
       </div>
       <div className="overflow-x-hidden">
-        <div ref={scrollRef} className="ml-30 max-md:ml-0 overflow-auto mt-8 flex space-x-5">
+        <div ref={scrollRef} className="ml-30 max-md:ml-0 overflow-x-auto mt-8 max-md:mt-15 flex space-x-5">
           {data.map((elem) => {
             return (
               <div  className="h-70  min-w-90 p-5 rounded-3xl px-10 bg-white">

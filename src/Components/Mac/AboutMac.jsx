@@ -86,17 +86,17 @@ const AboutMac = () => {
   return (
     <div>
       <div ref={enterRef} className="h-screen p-1 ">
-        <div className="ml-30 font-[font2] text-6xl mt-20 opacity-0">
+        <div className="ml-30 font-[font2] max-md:ml-5 text-6xl mt-20 opacity-0">
           Get to know Mac.
         </div>
 
-        <div className="opacity-0 overflow-hidden">
-          <div ref={scrollRef} className="flex ml-30 mt-10 space-x-5 ">
+        <div className="opacity-0 max-md:mt-10 overflow-hidden">
+          <div ref={scrollRef} className="flex ml-30 mt-10 space-x-5 max-md:ml-2 max-md:overflow-x-auto">
             {data.map((elem) => {
               return (
-                <div className=" h-[105vh] min-w-[25vw] rounded-3xl">
+                <div className=" h-[105vh] min-w-[25vw] max-md:overflow-x-auto max-md:min-w-[85vw] rounded-3xl">
                   <img src={elem.img} className="relative rounded-4xl" alt="" />
-                  <div className={`absolute -mt-[105vh]   px-10 w-80 font-[font2] text-${elem.text}  z-10`}>
+                  <div className={`absolute -mt-[95vh] max-md:-mt-[75vh]   px-10 w-80 font-[font2] text-${elem.text}  z-10`}>
                     <div className=" ">{elem.heading}</div>
                     <div className="  text-3xl ">{elem.info}</div>
                   </div>
@@ -105,7 +105,7 @@ const AboutMac = () => {
             })}
           </div>
         </div>
-      <div className="absolute right-0 mr-10  mt-10 gap-5 flex">
+      <div className="absolute right-0 mr-10  mt-10 gap-5 max-md:hidden flex">
         <div onClick={()=>{
           setcount(count+350)
         }} className=""><ChevronLeft size={50}/></div>
