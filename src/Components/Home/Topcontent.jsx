@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react'
 
 const Topcontent = () => {
   return (
-    <div className='z-20 max-md:mt-20 flex justify-around mt-50 space-y-3 max-md:-ml-18  max-md:grid '>
+    <div className='z-20 max-md:mt-20 flex justify-around mt-50 space-y-3 max-md:-ml-13  max-md:grid '>
         <div className='flex '>
       <div className='font-[font1]  max-md:text-4xl  text-8xl  text-[#0056ced2]'>St</div>
       <div className='font-[font1]  max-md:text-4xl text-8xl  text-[#aaaaa9]'>o</div>
