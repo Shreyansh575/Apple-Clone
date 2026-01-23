@@ -94,7 +94,7 @@ const Accecories = () => {
         <div ref={scrollRef} className='flex gap-5  ml-40 max-md:ml-5 max-md:overflow-auto relative '>
             {data.map((elem)=>{
                 return(
-                    <div className='h-[80vh] max-md:h-[63vh] min-w-[400px] rounded-2xl bg-white  w-full'>
+                    <div className='h-[80vh] max-md:h-[73vh] min-w-[400px] rounded-2xl bg-white  w-full'>
 
 
 

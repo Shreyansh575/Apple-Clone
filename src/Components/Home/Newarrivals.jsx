@@ -70,15 +70,15 @@ const Newarrivals = () => {
 
   return (
     <div className="p-1 overflow-auto max-md:ml-0 max-md:grid max-md:h-100vh  ">
-      <div className="flex mt-20 font-[font7] text-4xl max-md:ml-5  ml-40">
+      <div className="flex mt-20 font-[font7] text-4xl max-md:ml-8  ml-40">
         <div className="text-blue-500 flex top-5">The &nbsp;</div>
         <div className="text-blue-400"> l</div>
         <div className="text-[#26453c]">a</div>
         <div className="text-[#c45515]">test.</div>
-        <div className="text-gray-400 max-md:-ml-48 max-md:mt-10">Truly awe-inspired Gifts.</div>
+        <div className="text-gray-400 max-md:-ml-45 max-md:mt-10">Truly awe-inspired Gifts.</div>
       </div>
       <div className="  overflow-hidden   mt-20">
-        <div ref={scrollRef} className="ml-40 max-md:ml-5 flex gap-5  max-md:overflow-auto ">
+        <div ref={scrollRef} className="ml-40 max-md:ml-0 flex gap-5  max-md:overflow-auto ">
           {imgs.map((elem) => (
             <div className="min-w-[40px] max-md:ml-0
               h-[75vh] flex-shrink-0 scale-101 rounded-3xl hover:scale-102 ">

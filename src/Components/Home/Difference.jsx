@@ -45,7 +45,7 @@ const Difference = () => {
     })
   },[count])
   return (
-    <div className="p-1">
+    <div className="p-1 max-md:mt-15">
       <div className=" flex font-[font2] max-md:-mt-8 max-md:ml-5 ml-40 mt-10 max-md:grid max-md:text-2xl   text-4xl">
         <div className="flex">The Apple Store difference.&nbsp;</div>
         <div className="text-gray-500 max-md:text-[22px]  flex">
