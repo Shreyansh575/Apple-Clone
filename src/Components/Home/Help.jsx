@@ -81,8 +81,8 @@ const Help = () => {
              <div className=' h-[75vh] w-[30vw] rounded-3xl hover:scale-95 max-md:h-[70vh] max-md:w-[80vw] '>
                 <div className=' mt-8 '>
                     <div className='absolute mt-5 ml-4 z-2 text-[10px] font-[font1] text-gray-700 font-extrabold'>{elem.about}</div>
-                    <div className='absolute  ml-4 z-2 text-[20px] mt-12 font-[font1] max-md:leading-6  font-extrabold'>{elem.name}</div>
-                    <div className='absolute max-md:mt-24 ml-4 z-2 text-[20px] mt-22 font-[font1]  font-extrabold'>{elem.help}</div>
+                    <div className='absolute  ml-4 z-2 text-[20px] max-md:text-[19px] max-md:mt-5 mt-12 font-[font1] max-md:leading-6  font-extrabold'>{elem.name}</div>
+                    <div className='absolute  ml-4 z-2 max-md:mt-11 text-[20px] mt-22 font-[font1]  font-extrabold'>{elem.help}</div>
                     <div className='absolute  ml-4 z-2 text-[15px] mt-38 font-[font5] text-gray-800  font-extrabold'>{elem.info}</div>
                 </div>
                 <img src={elem.img} className=' w- h-full relative object-cover rounded-2xl' alt="" />
