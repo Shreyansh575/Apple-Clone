@@ -87,12 +87,12 @@ const Whyapple = () => {
       
 
       
-      <div className="ml-30 mt-10  text-6xl font-[font7]">
+      <div className="ml-30 mt-10 max-md:ml-5  text-6xl max-md:text-[35px] leading-12 font-[font7]">
         <div>Why Apple is the best</div>
-        <div>place to buy Mac.</div>
+        <div>Place to buy Mac.</div>
       </div>
       <div className="overflow-x-hidden">
-        <div ref={scrollRef} className="ml-30 mt-8 flex space-x-5">
+        <div ref={scrollRef} className="ml-30 max-md:ml-0 overflow-auto mt-8 flex space-x-5">
           {data.map((elem) => {
             return (
               <div  className="h-70  min-w-90 p-5 rounded-3xl px-10 bg-white">
@@ -109,7 +109,7 @@ const Whyapple = () => {
           })}
         </div>
       </div>
-      <div className="flex justify-end mr-15 mt-10 space-x-5  ">
+      <div className="flex justify-end mr-15 mt-10 space-x-5 max-md:hidden  ">
       <div className="bg-gray-400 rounded-full" onClick={()=>{
         setcount(count+350)
       }}><ChevronLeft size={40}/></div>

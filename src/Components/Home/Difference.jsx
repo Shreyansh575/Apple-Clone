@@ -46,19 +46,19 @@ const Difference = () => {
   },[count])
   return (
     <div className="p-1">
-      <div className=" flex font-[font2] ml-40 mt-10 text-4xl">
+      <div className=" flex font-[font2] max-md:-mt-8 max-md:ml-5 ml-40 mt-10 max-md:grid max-md:text-2xl   text-4xl">
         <div className="flex">The Apple Store difference.&nbsp;</div>
-        <div className="text-gray-500 flex">
+        <div className="text-gray-500 max-md:text-[22px]  flex">
           Even more reasons to shop with us.
         </div>
       </div>
         
 <div className="overflow-x-hidden">
-  <div ref={scrollRef} className="ml-40 mt-5 flex gap-5 ">
+  <div ref={scrollRef} className="ml-40 max-md:ml-5 mt-5 flex gap-5 max-md:overflow-auto ">
 
   {content.map((elem)=>{
     return(
-        <div className="relative bg-white rounded-2xl  h-60 min-w-80 font-[font2] text-[20px]">
+        <div className="relative bg-white rounded-2xl   h-60 min-w-80 font-[font2] text-[20px]">
           <div>
   <div className={`text-[${elem.color}]`}>
           <div className="mt-5 ml-10">{elem.svg }</div> 
@@ -74,10 +74,10 @@ const Difference = () => {
         
         </div>
         </div>
-    <div className={` z-20 absolute -mt-32 bg-gray-400 ${count===0 ? 'hidden':'block'} rounded-full`}><ChevronLeft size={50} onClick={()=>{
+    <div className={` z-20 absolute -mt-32 bg-gray-400 ${count===0 ? 'hidden':'block'} rounded-full max-md:hidden`}><ChevronLeft size={40} onClick={()=>{
       setcount(count+350)
     }}/></div>
-    <div className={`absolute right-0 -mt-32 bg-gray-400 ${count===-1750 ? 'hidden':'block'} rounded-full`}><ChevronRight size={50} onClick={()=>{
+    <div className={`absolute right-0 -mt-32 bg-gray-400 ${count===-1750 ? 'hidden':'block'} rounded-full max-md:right-7 max-md:hidden`}><ChevronRight size={40} onClick={()=>{
       setcount(count-350)
     }}/></div>
     </div>

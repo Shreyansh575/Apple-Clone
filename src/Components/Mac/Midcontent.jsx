@@ -93,8 +93,8 @@ const Midcontent = () => {
   return (
     <div className="bg-white mt-20">
       <div ref={parentRef} className="">
-        <div className="font-[font2]   text-8xl ml-30">Mac</div>
-        <div className="bg-gray-300 ml-30 relative mt-10 h-13 w-[30vw] rounded-full flex justify-evenly items-center font-[font5]">
+        <div className="font-[font2] max-md:ml-5   text-8xl ml-30">Mac</div>
+        <div className="bg-gray-300 ml-30 relative mt-10 h-13 w-[30vw] max-md:ml-5 max-md:w-[90vw] max-md:text-[15px] rounded-full flex justify-evenly items-center font-[font5]">
           <div
             onClick={() => {
               setcount(0);
@@ -138,7 +138,7 @@ const Midcontent = () => {
             Displays
           </div>
         </div>
-        <div className="flex justify-end space-x-5 mr-8 items-end">
+        <div className="flex justify-end space-x-5 mr-8 max-md:mt-8 items-end">
           <div className="" onClick={()=>{
             setcountx(countx + 350)
             console.log(countx);
@@ -153,7 +153,7 @@ const Midcontent = () => {
             {data.map((elem)=>{
               return(
               <div ref={parentRef} className="">
-                <img src={elem.img} className="h-[50vh] min-w-[30vw] rounded-3xl object-cover" alt="" />
+                <img src={elem.img} className="h-[50vh] min-w-[30vw] max-md:min-w-[80vw] max-md:h-[40vh] rounded-3xl object-cover" alt="" />
                 
 
                 <div className="mt-10 text-center font-[font2] text-3xl">{elem.name}</div>
@@ -161,8 +161,8 @@ const Midcontent = () => {
                 <div className="mt-3 px-5 text-center text-[20px] font-[font5] ">{elem.info}</div>
                 <div className="mt-3 px-20 text-center text-[20px] font-[font2] ">{elem.price}</div>
 
-                <div className="flex text-2xl mt-10 space-x-10 items-center px-20">
-                  <div className="bg-blue-500 px-3 py-2 rounded-full text-white">Learn More</div>
+                <div className="flex text-2xl mt-10 space-x-10 items-center max-md:text-[15px] max-md:space-x-6 px-20">
+                  <div className="bg-blue-500 px-3 py-2 rounded-full max-md:px-1  text-white">Learn More</div>
                   <div className="text-blue-700 text-[20px] flex text-center hover:underline">Buy <ChevronRight /></div>
                 </div>
                 

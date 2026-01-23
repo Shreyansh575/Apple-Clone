@@ -40,16 +40,18 @@ const Fitness = () => {
     ]
   return (
     <div className='mt-40'>
-        <div className='text-4xl ml-40 font-[font2] flex'>
+        <div className='text-4xl max-md:ml-5 max-md:grid max-md:text-[33px] ml-40 font-[font2] flex'>
+
+
             <div>Made to move. &nbsp;</div>
             <div className='text-gray-500'> Level up your health and fitness.</div>
         </div>
       <div  className='overflow-x-hidden'>
-        <div ref={scrollRef} className='ml-40 relative mt-10 flex gap-5'>
+        <div ref={scrollRef} className='ml-40 relative mt-10 max-md:ml-5 max-md:overflow-auto  flex gap-5'>
             {data.map((elem)=>{
                 return(
-                    <div className='h-[90vh] rounded-3xl bg-white'>
-                        <div className='min-w-100 h-[75vh]' >
+                    <div className='h-[90vh] max-md:h-[80vh] rounded-3xl bg-white'>
+                        <div className='min-w-100 h-[75vh] max-md:h-[60vh] max-md:min-w-[90vw] ' >
 
                 <img src={elem.img} className='h-full rounded-3xl object-cover w-full'  alt="" />
                         </div>
@@ -62,12 +64,12 @@ const Fitness = () => {
             })}
         </div>
       </div>
-      <div className={`bg-gray-300 absolute  z-10 -mt-80 ${count===0 ? 'hidden':'block'} rounded-full`} onClick={()=>{
+      <div className={`bg-gray-300 max-md:-mt-110 absolute   z-10 -mt-80 ${count===0 ? 'hidden':'block'} max-md:hidden rounded-full`} onClick={()=>{
         setcount(count+350)
         console.log(count);
         
       }}><ChevronLeft size={50}/></div>
-      <div className={`bg-gray-300 absolute right-0 z-10 ${count>-1400 ? 'block':'hidden'}  -mt-80 rounded-full `}onClick={()=>{
+      <div className={`bg-gray-300 absolute max-md:-mt-110 right-0 z-10 ${count>-1400 ? 'block':'hidden'} max-md:right-6  -mt-80 rounded-full max-md:hidden `}onClick={()=>{
         setcount(count-350)
         console.log(count);
       }}><ChevronRight size={50}/></div>

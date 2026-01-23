@@ -49,11 +49,11 @@ const Macnav = () => {
     ]
   return (
     <div >
-        <div className='bg-white   h-30 mt-15 flex '>
-            <div className='flex px-25  mt-3 gap-10 '>
+        <div className='bg-white max-md:ml-0  h-30 mt-15 flex '>
+            <div className='flex px-25 max-md:px-2 overflow-x-scroll mt-3 gap-10 '>
             {data.map((elem)=>{
                 return(
-                    <div className='max-h-30'>
+                    <div className='max-h-30 max-md:-mt-3 flex flex-col justify-center items-center'>
                 <img src={elem.img} className='' alt="" />
                 <div className='flex font-[font5] text-[13px]  mt-3'>{elem.name}</div>
                 </div>

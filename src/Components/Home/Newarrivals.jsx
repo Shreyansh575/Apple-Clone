@@ -69,28 +69,29 @@ const Newarrivals = () => {
   }, [count]);
 
   return (
-    <div className="p-1 overflow-auto  ">
-      <div className="flex mt-20 font-[font7] text-4xl ml-40">
-        <div className="text-blue-500 top-5">The &nbsp;</div>
+    <div className="p-1 overflow-auto max-md:ml-0 max-md:grid max-md:h-100vh  ">
+      <div className="flex mt-20 font-[font7] text-4xl max-md:ml-5  ml-40">
+        <div className="text-blue-500 flex top-5">The &nbsp;</div>
         <div className="text-blue-400"> l</div>
         <div className="text-[#26453c]">a</div>
         <div className="text-[#c45515]">test.</div>
-        <div className="text-gray-400">Truly awe-inspired Gifts.</div>
+        <div className="text-gray-400 max-md:-ml-48 max-md:mt-10">Truly awe-inspired Gifts.</div>
       </div>
       <div className="  overflow-hidden   mt-20">
-        <div ref={scrollRef} className="ml-40 flex gap-5   ">
+        <div ref={scrollRef} className="ml-40 max-md:ml-5 flex gap-5  max-md:overflow-auto ">
           {imgs.map((elem) => (
-            <div className="min-w-[40px] h-[75vh] flex-shrink-0 scale-101 rounded-3xl hover:scale-102 bg-amber-300">
+            <div className="min-w-[40px] max-md:ml-0
+              h-[75vh] flex-shrink-0 scale-101 rounded-3xl hover:scale-102 ">
               <div className="w-full  space-y-10">
 
-              <div className={`absolute mt-5  ml-4 ${elem.color}  z-10  font-[font2] text-3xl `}>{elem.name}</div>
+              <div className={`absolute mt-5  ml-4 ${elem.color}  z-10 max-md:text-2xl  font-[font2] text-3xl `}>{elem.name}</div>
 
-              <div className={`absolute mt-5  ml-4 ${elem.color} mt-13 z-10  font-[font2] text-[20px] `}>{elem.ai}</div>
+              <div className={`absolute mt-5  ml-4 ${elem.color} mt-13 z-10 max-md:text-[18px]  font-[font2] text-[20px] `}>{elem.ai}</div>
               <div className={`absolute mt-5  ml-4 ${elem.color} mt-20 z-11  font-[font5] text-[15px] `}>{elem.price}</div>
               </div>
               <img
                 src={elem.img}
-                className="h-full relative w-full object-cover rounded-3xl"
+                className="h-full max-md:max-w-[300px] max-md:max-h-[500px] relative w-full object-cover rounded-3xl"
                 alt="dd"
               />
             </div>
@@ -99,22 +100,22 @@ const Newarrivals = () => {
       </div>
 
       <div
-        className={`absolute bg-gray-400  rounded-full ${count>0 ? 'block':'hidden'}  z-50 left-8  -mt-70`}
+        className={`absolute bg-gray-400  rounded-full ${count>0 ? 'block':'hidden'}  z-50 left-1 max-md:hidden -mt-60  max-md:mt-130`}
         onClick={() => {
-          setcount(count-350);
+          setcount(count-340);
           console.log(count);
         }}
       >
-        <ChevronLeft size={50} />
+        <ChevronLeft size={30} />
       </div>
       <div
-        className={`absolute z-50 right-0 bg-gray-400 ${count>2100 ? 'hidden':'block'} rounded-full -mt-70`}
+        className={`absolute z-50 right-1 bg-gray-400 ${count>2100 ? 'hidden':'block'} rounded-full  max-md:mt-130  max-md:right-2 -mt-60 max-md:hidden`}
         onClick={() => {
-          setcount(count+350);
+          setcount(count+340);
           console.log(count);
         }}
       >
-        <ChevronRight size={50} />
+        <ChevronRight size={30} />
       </div>
     </div>
   );

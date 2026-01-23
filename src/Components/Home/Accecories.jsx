@@ -86,15 +86,15 @@ const Accecories = () => {
     },[count])
   return (
     <div className='mt-40'>
-        <div className='text-4xl ml-40 font-[font2] flex'>
-            <div>The Apple experience.&nbsp;</div>
+        <div className='text-4xl max-md:-mt-10 max-md:ml-5 max-md:-mt-9 max-md:grid max-md:text-2xl ml-40 font-[font2] flex'>
+            <div className='max-md:text-3xl'>The Apple experience.&nbsp;</div>
             <div className='text-gray-400'> Do even more with Apple products and services.</div>
         </div>
       <div  className='overflow-x-hidden mt-10'>
-        <div ref={scrollRef} className='flex gap-5  ml-40 relative '>
+        <div ref={scrollRef} className='flex gap-5  ml-40 max-md:ml-5 max-md:overflow-auto relative '>
             {data.map((elem)=>{
                 return(
-                    <div className='h-[80vh] min-w-[400px] rounded-2xl bg-white  w-full'>
+                    <div className='h-[80vh] max-md:h-[63vh] min-w-[400px] rounded-2xl bg-white  w-full'>
 
 
 
@@ -111,12 +111,12 @@ const Accecories = () => {
       </div>
       <div onClick={()=>{
         setcount(count+350)
-      }} className={`bg-gray-400 left-0  rounded-full ${count===0 ? 'hidden':'block'}  -mt-90 absolute`}><ChevronLeft  size={60}/></div>
+      }} className={`bg-gray-400 left-1  rounded-full ${count===0 ? 'hidden':'block'}  -mt-70 absolute max-md:hidden max-md:-mt-90`}><ChevronLeft  size={40}/></div>
       <div onClick={()=>{
         setcount(count-350)
         console.log(count);
         
-      }} className={`bg-gray-400 right-0  rounded-full ${count===-5250 ? 'hidden':'block'}  -mt-90 absolute`}><ChevronRight size={60}/></div>
+      }} className={`bg-gray-400 right-1 max-md:right-1 rounded-full ${count===-5250 ? 'hidden':'block'}  max-md:hidden -mt-70 max-md:-mt-90 absolute`}><ChevronRight size={40 }/></div>
     </div>
   )
 }

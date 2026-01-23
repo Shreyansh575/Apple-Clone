@@ -9,8 +9,8 @@ import Fitness from '../Components/Home/Fitness'
 
 const Home = () => {
   return (
-    <div className='overflow-auto h-full'>
-            <div className=" absolute mt-13  w-screen h-[50px]
+    <div className='overflow-auto max-md:w-screen  h-full'>
+            <div className=" absolute mt-13 max-md:hidden  w-screen h-[50px]
         bg-gradient-to-r from-sky-400 via-[#fff712] to-[#f09723]
         rounded-[10%]
         blur-[25px]

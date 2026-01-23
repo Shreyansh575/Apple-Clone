@@ -17,10 +17,10 @@ import Support from './Pages/Support'
 
 const App = () => {
   return (
-    <div className='h-full w-screen bg-[#f5f5f7]'>
+    <div className='h-full overflow-x-hidden w-screen bg-[#f5f5f7]'>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/Apple-clone/' element={<Home/>}/>
         <Route path='/Mac' element={<Mac/>}/>
         <Route path='/Tv&Home' element={<Tvhome/>}/>
         <Route path='/ipad' element={<Ipad/>}/>

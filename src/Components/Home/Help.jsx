@@ -69,16 +69,16 @@ const Help = () => {
  <div className='grid'>
     
      
-   <div className='flex ml-40 mt-10 text-4xl'>
-    <div className='font-[font2]'>Help is here.</div>
+   <div className='flex max-md:grid ml-40 mt-10 max-md:ml-5 max-md:-mt-0 text-4xl'>
+    <div className='font-[font2]  max-md:flex'>Help is here.</div>
     <div className='font-[font2] text-gray-500'>Whenever and however you need it. </div>
    </div>
-   <div  className='flex mt-10 p-1 overflow-x-hidden relative  h-[80vh] items-center    '>
-    <div ref={scrollRef} className='flex relative gap-5 ml-40 '>
+   <div  className='flex max-md:-mt-25 mt-10 p-1 overflow-x-hidden relative  h-[80vh] items-center    '>
+    <div ref={scrollRef} className='flex relative gap-5 max-md:ml-5 ml-40 max-md:overflow-auto '>
     {help.map((elem)=>{
         return(
             <div className='relative'>
-             <div className=' h-[75vh] w-[30vw] rounded-3xl hover:scale-95  '>
+             <div className=' h-[75vh] w-[30vw] rounded-3xl hover:scale-95 max-md:h-[50vh] max-md:w-[80vw] '>
                 <div className=' mt-8'>
                     <div className='absolute mt-5 ml-4 z-2 text-[10px] font-[font1] text-gray-700 font-extrabold'>{elem.about}</div>
                     <div className='absolute  ml-4 z-2 text-[20px] mt-12 font-[font1]  font-extrabold'>{elem.name}</div>
@@ -94,22 +94,22 @@ const Help = () => {
     </div>
       </div>
       <div
-             className={`absolute bg-gray-400  rounded-full ${scroll===0 ? 'hidden':'block'}  z-50 left-8  -mt-70`}
+             className={`absolute bg-gray-400  rounded-full ${scroll===0 ? 'hidden':'block'}  z-50 left-1 max-md:left-8 max-md:hidden  max-md:-mt-90  -mt-60`}
              onClick={() => {
                setscroll(scroll+350);
                console.log(scroll);
              }}
            >
-             <ChevronLeft size={50} />
+             <ChevronLeft size={40} />
            </div>
            <div
-             className={`absolute z-50 right-0 bg-gray-400 ${scroll===-2100 ? 'hidden':'block'} rounded-full -mt-70`}
+             className={`absolute z-50 right-0 bg-gray-400 ${scroll===-2100 ? 'hidden':'block'} rounded-full max-md:right-6 max-md:-mt-90 max-md:hidden  -mt-60`}
              onClick={() => {
                setscroll(scroll-350);
                console.log(scroll);
              }}
            >
-             <ChevronRight size={50} />
+             <ChevronRight size={40} />
            </div>
      
     </div>
