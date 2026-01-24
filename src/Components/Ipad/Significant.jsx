@@ -18,7 +18,7 @@ const Appleworld = () => {
 
   return (
     <div className='h-full bg-gray-200 p-1 relative top-100  '>
-      <div className='ml-20 flex justify-between mt-10 max-md:ml-5 max-md:grid'>
+      <div className='ml-20 flex justify-between mt-10  max-md:ml-5 max-md:grid'>
         <div className='text-5xl font-[font2]'>
 
         Unlock The World Of Apple.
@@ -27,7 +27,7 @@ const Appleworld = () => {
             Learn how Apple devices work better together <ChevronRight/>
         </div>
       </div>
-      <div className='p-20 max-md:px-3 '>
+      <div className='p-20  max-md:px-3 '>
 
       <div className='min-h-[110vh] max-md:w-[92vw]  rounded-[3vw] max-md:min-h-[130vh] bg-white
        flex    justify-between'>

@@ -73,7 +73,8 @@ const Navbar = () => {
         <div className={`
           ${menucount===0 ? 'hidden':'absolute mt-2 z-500 bg-[#dfdfdf] backdrop-blur-3xl h-screen w-screen left-0'}
           `}>
-              <div className='grid mt-15 gap-18 backdrop-blur-3xl'>
+              <div className='grid mt-15 gap-13
+               backdrop-blur-3xl'>
                 <div onClick={()=>{
                       navigate(`/Apple-Clone/`)
                        setmenucount(0)
