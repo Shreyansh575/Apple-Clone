@@ -44,14 +44,14 @@ const Ipadnav = () => {
         },
     ]
   return (
-    <div className=''>
-      <div className='bg-white  '>
-            <div className='  flex justify-center gap-x-9'>
+    <div className=' '>
+      <div className='bg-white max-md:ml-3 '>
+            <div className=' flex md:justify-center   gap-x-9   max-md:overflow-x-auto'>
                 {
                     data.map((elem)=>{
                         return(
-                            <div className='flex flex-col justify-center'>
-                        <img className='h-15' src={elem.img} alt="" />
+                            <div className='flex  flex-col justify-center'>
+                        <img className='h-15 ' src={elem.img} alt="" />
                         <div>{elem.name}</div>
                         </div>
                         )

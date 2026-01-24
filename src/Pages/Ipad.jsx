@@ -2,7 +2,7 @@ import React from 'react'
 import Ipadnav from '../Components/Ipad/Ipadnav'
 import Ipadmid from '../Components/Ipad/Ipadmid'
 import Whyapple from '../Components/Mac/Whyapple'
-import Aboutipad from './Aboutipad'
+import Aboutipad from '../Components/Ipad/Aboutipad'
 import Significant from '../Components/Ipad/Significant'
 
 

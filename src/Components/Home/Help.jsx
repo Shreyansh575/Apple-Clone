@@ -73,7 +73,7 @@ const Help = () => {
     <div className='font-[font2]  max-md:flex'>Help is here.</div>
     <div className='font-[font2] text-gray-500'>Whenever and however you need it. </div>
    </div>
-   <div  className='flex max-md:-mt-25 mt-10 p-1 overflow-x-hidden relative  h-[80vh] items-center    '>
+   <div  className='flex max-md:-mt-5 mt-10 p-1 overflow-x-hidden relative  h-[80vh] items-center    '>
     <div ref={scrollRef} className='flex relative gap-5 max-md:ml-5 ml-40 max-md:overflow-auto '>
     {help.map((elem)=>{
         return(

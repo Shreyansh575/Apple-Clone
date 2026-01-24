@@ -42,13 +42,14 @@ const Ipadmid = () => {
   return (
     <div className=" mt-20">
       <div>
-        <div className="text-7xl ml-30 font-[font7]">iPad</div>
+        <div className="text-7xl max-md:ml-5 ml-30 font-[font7]">iPad</div>
         <div className="overflow-hidden mt-20">
-          <div ref={scrollRef} className="flex  space-x-8 ml-30">
+          <div ref={scrollRef} className="flex  space-x-8 max-md:ml-1 max-md:overflow-x-auto ml-30">
             {data.map((elem) => {
               return (
-                <div className="min-w-[30vw]">
-                  <img className="h-[70vh] w-auto" src={elem.img} alt="" />
+                <div className="min-w-[30vw] 
+                max-md:min-w-[95vw]">
+                  <img className="h-[70vh] max-md:w-auto w-auto" src={elem.img} alt="" />
                   <div className="mt-10">
                     <div className="text-2xl text-center font-[font2]">
                       {elem.name}
@@ -73,7 +74,7 @@ const Ipadmid = () => {
             })}
           </div>
         </div>
-                    <div className="absolute mt-5   flex gap-2 right-0">
+                    <div className="absolute mt-5   flex gap-2 max-md:hidden right-0">
                     <div onClick={()=>{
                         setcount(count+350)
                     }}><ChevronLeft size={60}/></div>

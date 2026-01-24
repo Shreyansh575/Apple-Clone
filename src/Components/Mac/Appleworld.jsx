@@ -29,13 +29,13 @@ const Appleworld = () => {
                 <div className='text-4xl font-[font2] text-gray-700 items-center justify-between  flex'>Mac and iPhone  <div  ref={arrowRef} ><ChevronDown size={50}/></div> </div>
                 <div ref={infoRef}  className={`${count===1 ? 'block':'hidden'} text-[18px] mt-2 max-md:text-[14px] font-[font7]`}>Answer calls or messages from your iPhone directly on your Mac. See and control what’s on your iPhone from your Mac with iPhone Mirroring. Use Universal Clipboard to copy images, video or text from your iPhone, then paste into another app on your nearby Mac. And thanks to iCloud, you can access your files from either your iPhone or your Mac. And so m⁠u⁠c⁠h⁠ ⁠m⁠o⁠r⁠e⁠.</div>
             </div>
-            <div className={`${count===1 ? 'mt-[28vh] absolute':''}`}>
+            <div className={`${count===1 ? 'max-md:mt-[28vh] max-md:absolute':''}`}>
                 <div ref={infoRef} onClick={()=>{
                   setcount(2)
                 }} className='text-4xl hover:cursor-pointer font-[font2] text-gray-700 items-center justify-between  flex'>Mac and iPad  <div ref={arrowRef} ><ChevronDown size={50}/></div> </div>
                 <div ref={infoRef}  className={`${count===2 ? 'block':'hidden'} text-[18px] max-md:text-[14px] mt-2 font-[font7]`} >Sketch on your iPad and have it appear instantly on your Mac. Or use your iPad as a second display, so you can work on one screen while you reference the other. You can even start something on your iPad — like a presentation or an email — and continue it on y⁠o⁠u⁠r⁠ ⁠M⁠a⁠c⁠.</div>
             </div >
-            <div className={`${count===1 ? 'mt-[35vh] absolute':''} ${count===2 ? 'mt-[24vh] absolute':''}`}>
+            <div className={`${count===1 ? 'max-md:mt-[35vh] max-md:absolute':''} ${count===2 ? 'max-md:mt-[24vh] max-md:absolute':''}`}>
             <div onClick={()=>{
                   setcount(3)
                 }} className='hover:cursor-pointer'>

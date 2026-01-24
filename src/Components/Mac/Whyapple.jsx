@@ -69,7 +69,8 @@ const Whyapple = () => {
       scrollTrigger: {
         trigger: scrollenterRef.current,
         
-        start: "top 50%", 
+        start: "top 60%",
+ 
         
       },
     }

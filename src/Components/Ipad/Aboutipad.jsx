@@ -24,7 +24,7 @@ const Aboutipad = () => {
             scrollTrigger:{
                 trigger:enterRef.current,
                 
-                start:'top 20%',
+                start:'top 30%',
                
             },
             y:0,
@@ -82,24 +82,24 @@ const Aboutipad = () => {
 
 
   return (
-    <div className='h-[160vh]  p-1'>
+    <div className='h-[160vh] max-md:h-[110vh]  p-1'>
       <div ref={enterRef}>
-        <div className='ml-30 text-6xl font-[font2] mt-35'>Get to know iPad.</div>
+        <div className='ml-30 max-md:ml-5 text-6xl font-[font2] mt-35'>Get to know iPad.</div>
         <div className='overflow-hidden'>
-            <div ref={scrollRef} className='flex space-x-5 mt-20 ml-30'>
+            <div ref={scrollRef} className='flex space-x-5 mt-20 max-md:overflow-x-auto ml-30 max-md:ml-1'>
                 {data.map((elem)=>{
                     return(
-                    <div className='h-[90vh] min-w-[28vw]'>
+                    <div className='h-[90vh] max-md:min-w-[89vw] min-w-[28vw]'>
                         <img src={elem.img} className='h-full relative rounded-4xl object-cover w-full'  alt="" />
-                        <div className='absolute top-5 ml-10 text-[20px] font-[font2] text-white z-10'>{elem.feature}</div>
-                        <div className='absolute top-15 w-80 ml-10 text-[30px] font-[font2] text-white z-10'>{elem.info}</div>
+                        <div className='absolute top-5 ml-10 max-md:ml-5 text-[20px] font-[font2] max-md:w-50 text-white z-10'>{elem.feature}</div>
+                        <div className='absolute top-15 w-80 max-md:ml-5 ml-10 text-[30px] font-[font2] text-white z-10'>{elem.info}</div>
                     </div>
                     )
                 })}
             </div>
         </div>
       </div>
-      <div className="absolute mt-9   flex gap-2 right-0">
+      <div className="absolute mt-9 max-md:hidden  flex gap-2 right-0">
                     <div onClick={()=>{
                         setcount(count+350)
                     }}><ChevronLeft size={60}/></div>
