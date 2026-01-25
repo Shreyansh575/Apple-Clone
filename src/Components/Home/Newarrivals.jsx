@@ -86,8 +86,8 @@ const Newarrivals = () => {
 
               <div className={`absolute mt-5  ml-4 ${elem.color}  z-10 max-md:text-2xl  font-[font2] text-3xl `}>{elem.name}</div>
 
-              <div className={`absolute mt-5  ml-4 ${elem.color} mt-13 z-10 max-md:text-[18px]  font-[font2] text-[20px] `}>{elem.ai}</div>
-              <div className={`absolute mt-5  ml-4 ${elem.color} mt-20 z-11  font-[font5] text-[15px] `}>{elem.price}</div>
+              <div className={`absolute mt-5  ml-4 ${elem.color} mt-13 z-10 max-md:text-[18px] max-md:leading-5 font-[font2] text-[20px] `}>{elem.ai}</div>
+              <div className={`absolute mt-5  ml-4 ${elem.color} mt-20 z-11  font-[font5] text-[15px] max-md:mt-23`}>{elem.price}</div>
               </div>
               <img
                 src={elem.img}

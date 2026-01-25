@@ -53,12 +53,12 @@ const Aboutiphone = () => {
   return (
     <div className='mt-30'>
         <div>
-            <div className='ml-30 text-7xl font-[font7] '>Get to know iPhone.</div>
-                <div className='overflow-hidden'>
-                    <div ref={scrollRef} className='flex space-x-10 mt-20 ml-30'>
+            <div className='ml-30 text-7xl font-[font7] max-md:ml-5 max-md:text-5xl '>Get to know iPhone.</div>
+                <div className='overflow-hidden '>
+                    <div ref={scrollRef} className='flex space-x-10 mt-20 ml-60 max-md:ml-1  max-md:overflow-x-scroll'>
                         {data.map((elem)=>{
                             return(
-                                <div className='h-full min-w-[25vw] relative'>
+                                <div className='h-full min-w-[25vw] max-md:mr-2 max-md:h-[80vh] max-md:min-w-[80vw]  relative'>
                                 <img src={elem.img} className='rounded-4xl h-full relative w-full' alt="" />
                                 <div className='absolute top-5 ml-7 text-white'>
                                     <div className='text-[18px] font-[font7] '>{elem.feature}</div>
@@ -70,12 +70,12 @@ const Aboutiphone = () => {
                         })}
                     </div>
                 </div>
-                 <div className={`bg-gray-300 absolute  z-10 -mt-80 ${count===0 ? 'hidden':'block'} rounded-full`} onClick={()=>{
+                 <div className={`bg-gray-300 absolute  z-10 -mt-80 ${count===0 ? 'hidden':'block'} max-md:hidden rounded-full`} onClick={()=>{
         setcount(count+350)
         console.log(count);
         
       }}><ChevronLeft size={50}/></div>
-      <div className={`bg-gray-300 absolute right-0 z-10 ${count>-1800 ? 'block':'hidden'}  -mt-80 rounded-full `}onClick={()=>{
+      <div className={`bg-gray-300 max-md:hidden  absolute right-0 z-10 ${count>-1800 ? 'block':'hidden'}  -mt-80 rounded-full `}onClick={()=>{
         setcount(count-350)
         console.log(count);
       }}><ChevronRight size={50}/></div>

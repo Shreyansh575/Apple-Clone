@@ -41,16 +41,16 @@ const Iphonenav = () => {
        
     ]
   return (
-    <div className='mt-17 p-1 bg-white'>
+    <div className='mt-17 p-1 max-md:overflow-x-hidden bg-white'>
       <div className=' mt-20 '>
-    <div className='ml-30 text-8xl font-[font2] '>iPhone</div>
+    <div className='ml-30 max-md:ml-5 max-md:text-5xl text-8xl font-[font2] '>iPhone</div>
     <div>
-        <div className='flex space-x-13 mt-10 justify-center'>
+        <div className='flex space-x-13 mt-10 justify-center overflow-x-auto'>
             {data.map((elem)=>{
                 return(
                     <div className=' justify-center '>
-                        <img src={elem.img} alt="" />
-                        <div className='font-[font7] mt-2'>{elem.name}</div>
+                        <img src={elem.img} className=' max-md:min-w-10 object-cover ' alt="" />
+                        <div className='font-[font7] mt-2 '>{elem.name}</div>
                     </div>
                 )
 

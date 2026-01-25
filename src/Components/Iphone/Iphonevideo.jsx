@@ -20,6 +20,7 @@ useEffect(() => {
           setcount(0);
           break;
         case 20:
+          
           setcount(-1200);
           break;
         case 30:
@@ -88,18 +89,20 @@ useEffect(() => {
         "https://www.apple.com/105/media/us/iphone/2025/468ec89a-8873-403d-a7f2-3f977bebf3d7/anim/iphone-16e/medium.mp4",
     },
   ];
+
+
   return (
-    <div className="h-screen bg-white mt-20">
+    <div className="h-screen max-md:hidden bg-white mt-20">
       <div>
         <div className="overflow-x-hidden">
-          <div ref={scrollRef} className="flex ml-30   bg-white gap-10">
+          <div ref={scrollRef} className="flex ml-30 max-md:ml-1 max-md:overflow-x-auto bg-white gap-10">
             {data.map((elem) => {
               return (
                 <div className="relative">
                   <video
                     autoPlay
                     loop
-                    className="min-w-[85vw] h-[90vh] object-cover rounded-4xl"
+                    className="min-w-[85vw] h-[90vh] object-cover max-md:h-[60vh] max-md:min-w-[68vw] rounded-4xl"
                     src={elem.video}
                   />
 
@@ -119,7 +122,7 @@ useEffect(() => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="max-md:hidden">
         <div className="absolute w-50 h-15 bg-gray-400 rounded-4xl flex  z-50 -mt-8  left-[40vw] space-x-5">
           <div
             className={` bg-black rounded-full h-[15px] ml-10 mt-6 ${

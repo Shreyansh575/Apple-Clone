@@ -7,7 +7,7 @@ import Closerlook from '../Components/Iphone/Closerlook'
 const Iphone = () => {
     
   return (
-    <div className='bg-white'>
+    <div className='bg-white max-md:overflow-x-hidden'>
         <Iphonenav/>
         <Iphonevideo/>
         <Aboutiphone/>
