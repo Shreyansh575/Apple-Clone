@@ -55,28 +55,31 @@ const Closervision = () => {
         })
     },[count])
   return (
-    <div className='relative p-1 top-160  bg-[#F5F5F7]'>
-      <div className='text-6xl ml-50 font-[font7]'>Take a Closer Look</div>
+    <div className='relative  p-1 max-md:-top-[25vh] top-160  bg-[#ffffff]'>
+      <div className='text-6xl ml-50 max-md:ml-5 max-md:text-5xl max-md:w-[80vw] font-[font7]'>Take a Closer Look</div>
         <div className='overflow-y-hidden'>
-            <div className='overflow-x-hidden h-[120vh]'>
-                <div ref={scrollRef} className='flex ml-30   bg-[#F5F5F7] space-x-5  '>
+            <div className='overflow-x-hidden h-[120vh] max-md:h-[90vh] '>
+                <div ref={scrollRef} className='flex ml-0  max-md:overflow-x-auto bg-[#ffffff] space-x-5  '>
                     {data.map((elem)=>{
                         return(
-                            <div className='mt-30 ml-30 p-1  w-[50vw] min-h-[60vh] space-x-5 '>
+                            <div className='mt-30 ml-30  p-1  w-[50vw]  min-h-[60vh] max-md:space-x-0 space-x-5 '>
                                 <div className=''>
-                                    <div className='relative'>
+                                    <div className='relative flex justify-center'>
 
-                                <video autoPlay  loop className=' min-w-[50vw]   rounded-4xl' 
+                                <video autoPlay  loop className=' min-w-[50vw] 
+                                max-md:min-w-[80vw] max-md:ml-30  rounded-4xl max-md:min-h-[30vh]' 
                                 src={elem.video}  />
                                     </div>
-                                    <div>
+                                    <div >
 
-                                <img className='object-cover max-h-[90vh] rounded-4xl -mt-30'
+                                <img className='object-cover max-h-[90vh] max-md:h-[30vh] rounded-4xl max-md:-mt-65 
+                                max-md:ml-20 max-md:w-[70vw] -mt-30'
                                 src={elem.video}  />
                                     </div>
-                                <div className='text-[20px]  w-[50vw]  font-[font7] top-150 absolute text-[#747478] '>
-                                    {elem.about}
+                                
                                 </div>
+                                <div className='text-[20px]  w-[50vw]  font-[font7] top-150 absolute max-md:top-100 max-md:text-[15px] max-md:w-[60vw] text-[#747478] '>
+                                    {elem.about}
                                 </div>
                             </div>
                         )
@@ -84,12 +87,12 @@ const Closervision = () => {
                 </div>
             </div>
         </div>
-        <div className={`bg-gray-300 absolute  z-10 -mt-80 ${count===0 ? 'hidden':'block'} rounded-full`} onClick={()=>{
+        <div className={`bg-gray-300 absolute  z-10 -mt-80 ${count===0 ? 'hidden':'block'} rounded-full max-md:hidden`} onClick={()=>{
         setcount(count+350)
         console.log(count);
         
       }}><ChevronLeft size={50}/></div>
-      <div className={`bg-gray-300 absolute right-0 z-10 ${count>-6000 ? 'block':'hidden'}  -mt-80 mr-5 rounded-full `}onClick={()=>{
+      <div className={`bg-gray-300 absolute right-0 z-10 ${count>-6000 ? 'block':'hidden'}  -mt-80 mr-5 rounded-full max-md:hidden `}onClick={()=>{
         setcount(count-350)
         console.log(count);
       }}><ChevronRight size={50}/></div>

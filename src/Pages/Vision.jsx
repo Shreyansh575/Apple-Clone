@@ -15,7 +15,6 @@ const Vision = () => {
         <Visionnav/>
         <Visionintro/>
         <Aboutvision/>
-        
         <Visionvideo/>
         <Closervision/>
         <Entertainmentvideo/>

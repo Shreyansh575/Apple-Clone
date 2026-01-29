@@ -29,20 +29,22 @@ const Airpodnav = () => {
         },
     ]
   return (
-    <div className='h-30 absolute z-200 bg-[#f5f5f5] -mt-18 '>
-        <div className='flex px-80 items-end space-x-10 '>
+    <div className='h-30 relative z-200 bg-[#f5f5f5] -mt-18 '>
+        <div className='flex px-80 items-end space-x-10 max-md:overflow-x-auto max-md:px-5 max-md:mt-20 '>
             {data.map((elem)=>{
                 return(
                     <div className=''>
+<div className='flex justify-center'>
 
-                        <img src={elem.img} className='ml-2 ' alt="" />
-                        <div className='w-22 mt-1 text-[14px] font-[font6]'>{elem.name}</div>
+                        <img src={elem.img} className='max-md:scale-130 flex ' alt="" />
+</div>
+                        <div className='w-22 mt-1 text-[14px] text-center font-[font6]'>{elem.name}</div>
                     </div>
                 )
             })}
         </div>
-        <div className='bg-white mt-8 py-2  text-[18px] px-70'>
-            <div className='flex '>Buy AirPods Pro 3 and get 3 months of Apple Fitness+* and Apple Music** free.&nbsp;&nbsp;&nbsp; <div className='text-blue-600 flex items-center hover:underline'>Buy <ChevronRight/></div></div>
+        <div className='bg-white mt-8 py-2  text-[18px] max-md:px-2 px-70'>
+            <div className='flex max-md:flex-col justify-center text-center '>Buy AirPods Pro 3 and get 3 months of Apple Fitness+* and Apple Music** free.&nbsp;&nbsp;&nbsp; <div className='text-blue-600 flex items-center hover:underline max-md:ml-[40vw] max-md:active:underline'>Buy <ChevronRight/></div></div>
         </div>
     </div>
   )

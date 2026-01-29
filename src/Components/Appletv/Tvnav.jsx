@@ -48,12 +48,12 @@ const Tvnav = () => {
   return (
     <div>
       <div>
-        <div ref={navRef}  className='flex mt-20 space-x-9 px-60 h-20 ml-20'>
+        <div ref={navRef}  className='flex mt-20 space-x-9 max-md:px-1 max-md:overflow-x-auto max-md:ml-0 max-md:mt-5  px-60 max-md:h-25 ml-20'>
             {navdata.map((elem)=>{
               return(
                 <div className='h-12 justify-center'>
-                  <img src={elem.img} className='h-full' alt="ee" />
-                  <div className='font-[font5] text-[12px]'>{elem.name}</div>
+                  <img src={elem.img} className='h-full max-md:scale-110' alt="ee" />
+                  <div className='font-[font5] w-12 text-[12px] max-md:text-center max-md:mt-2'>{elem.name}</div>
                 </div>
               )
             })}

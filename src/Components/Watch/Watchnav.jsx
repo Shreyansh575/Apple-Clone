@@ -56,7 +56,7 @@ const Watchnav = () => {
     <div>
       <div>
         <div>
-            <div className='px-21 flex space-x-6'>
+            <div className='px-21 max-md:px-5 max-md:overflow-x-auto flex space-x-6'>
                 {data.map((elem)=>{
                     return(
                         <div>

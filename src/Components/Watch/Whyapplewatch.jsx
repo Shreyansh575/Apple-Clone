@@ -67,12 +67,12 @@ const Whyapplewatch = () => {
         })
     },[count])
   return (
-    <div className='mt-50 h-[140vh] relative p-1 bg-[#F5F5F7]'>
+    <div className='mt-50 h-[150vh] relative p-1 bg-[#F5F5F7]'>
       <div className='relative'>
-        <div className='mt-40  ml-30 font-[font7] text-6xl w-[53vw]'>Why Apple is the best place to buy Apple Watch.</div>
+        <div className='mt-40 max-md:ml-5 max-md:w-[90vw] max-md:text-[40px] max-md:leading-12  ml-30 font-[font7] text-6xl w-[53vw]'>Why Apple is the best place to buy Apple Watch.</div>
         <div>
             <div className='overflow-hidden'>
-                <div ref={scrollRef} className='flex  space-x-10 ml-30 mt-30'>
+                <div ref={scrollRef} className='flex max-md:ml-1  space-x-10 max-md:overflow-x-auto max-md:mt-15 ml-30 mt-20'>
                     {data.map((elem)=>{
                         const click = ()=>{
                             return(
@@ -84,7 +84,7 @@ const Whyapplewatch = () => {
                             <div onClick={()=>{
                                 click()
                                 
-                            }} className='min-w-[30vw] bg-white overflow-hidden p-1 h-[80vh] rounded-4xl'>
+                            }} className='min-w-[30vw] max-md:min-w-[90vw]              bg-white overflow-hidden p-1 h-[80vh] rounded-4xl'>
                                 <div className='ml-10 mt-10'>
                                     <div className='text-[20px] font-[font7] '>{elem.feature}</div>
                                     <div className='text-[35px] leading-10 mt-2 font-[font7] '>{elem.info}</div>
@@ -94,23 +94,6 @@ const Whyapplewatch = () => {
                                 <img className='rounded-4xl mt-20' src={elem.img} alt="" />
                                 </div>
                                  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                  
                             </div>
                         )
@@ -118,12 +101,12 @@ const Whyapplewatch = () => {
                 </div>
             </div>
         </div>
-        <div className={`bg-gray-300 absolute  z-10 -mt-80 ${count===0 ? 'hidden':'block'} rounded-full`} onClick={()=>{
+        <div className={`bg-gray-300 absolute  z-10 -mt-80 ${count===0 ? 'hidden':'block'} rounded-full max-md:hidden`} onClick={()=>{
         setcount(count+350)
         console.log(count);
         
       }}><ChevronLeft size={50}/></div>
-      <div className={`bg-gray-300 absolute right-0 z-10 ${count>-1800 ? 'block':'hidden'}  -mt-80 rounded-full `}onClick={()=>{
+      <div className={`bg-gray-300 absolute right-0 z-10 ${count>-1800 ? 'block':'hidden'}  -mt-80 rounded-full max-md:hidden `}onClick={()=>{
         setcount(count-350)
         console.log(count);
       }}><ChevronRight size={50}/></div>

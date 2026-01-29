@@ -25,13 +25,13 @@ const Watchslider = () => {
   return (
     <div>
         <div className='mt-30'>
-            <div className='ml-30 text-8xl font-[font7]'>Apple Watch</div>
-            <div className='flex ml-30 space-x-8 mt-30'>
+            <div className='ml-30 max-md:ml-5 max-md:text-[55px]  text-8xl font-[font7]'>Apple Watch</div>
+            <div className='flex ml-30 space-x-8 mt-30 max-md:mt-12 max-md:overflow-x-auto max-md:ml-1 '>
                 {
                     data.map((elem)=>{
                         return(
                             <div>
-                                <img className='h-[60vh]' src={elem.img} alt="" />
+                                <img className='h-[60vh] max-md:min-w-[100vw]' src={elem.img} alt="" />
                                 <div>
                                     <div className='text-center mt-5 text-[30px] font-[font7]'>{elem.name}</div>
                                     <div className='text-center mt-5 text-[23px]  '>{elem.info}</div>

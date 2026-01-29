@@ -39,35 +39,38 @@ const Topboxes = () => {
 
   return (
     <div>
-      <div ref={firstRef} className='flex p-2 gap-5 rounded-3xl'>
-        <div className=' rounded-3xl bg-black  '>
-            <div className='absolute rounded-3xl flex left-65 text-white mt-3 '>
+      <div ref={firstRef} className='flex p-2 gap-5 rounded-3xl md:mt-10 max-md:grid'>
+        <div className=' rounded-3xl max-md:h-97 bg-black max-md:rounded-l-3xl'>
+            <div className='absolute rounded-3xl flex left-65 max-md:left-20 text-white mt-3 '>
                 <div>
-            <div className='text-[30px] font-[font2]'>HomePod</div>
-            <div className='text-[60px] text-center -ml-28 -mt-5 font-[font2]'>Profound sound.</div>
-            <div className='text-[30px] font-[font2] -mt-4'>₹32900.00*</div>
-            <div className='text-[20px] font-[font2] -ml-10 mt-2 flex gap-10'>
+            <div className='text-[30px] max-md:ml-8 font-[font2]'>HomePod</div>
+            <div className='text-[60px] text-center -ml-28 max-md:leading-10 max-md:mt-2 -mt-5 font-[font2]'>Profound sound.</div>
+            <div className='text-[30px] max-md:mt-1 max-md:ml-3 font-[font2] -mt-4'>₹32900.00*</div>
+            <div className='text-[20px] font-[font2] -ml-10 mt-2 flex max-md:ml-5 gap-10'>
                 <div className='bg-blue-600 rounded-full  p-1  px-5'>Buy</div>
                 <div className='flex items-center text-blue-600 hover:underline'>Learn More <ChevronRight/></div>
             </div>
             </div>
             </div>
-            <img className='h-[100vh] mt-50  w-[48vw] rounded-3xl relative object-cover' src="https://www.apple.com/v/tv-home/q/images/overview/homepod__eam53jjm772a_medium.jpg" alt="" />
+            <img className='h-[100vh] mt-50  w-[48vw] max-md:w-[100vw] rounded-3xl relative max-md:h-[80vh] md:object-cover object-contain' src="https://www.apple.com/v/tv-home/q/images/overview/homepod__eam53jjm772a_medium.jpg" alt="" />
             
         </div>
-        <div className=' rounded-3xl bg-white  '>
-            <div className='absolute  flex right-20 text-black mt-3 '>
+        <div className=' rounded-3xl max-md:mt-50 bg-white 
+        h-[90vh] max-md:mt-80'>
+            <div className='absolute   flex right-20 text-black mt-3 max-md:left-10  max-md:mt-20 '>
                 <div>
-            <div className='text-[30px] ml-25 font-[font2]'>HomePod mini</div>
-            <div className='text-[60px] w-150 text-center leading-12 -ml-25  font-[font2]'>Surprising sound for its size.</div>
-            <div className='text-[30px] ml-20  mt-2 font-[font2] -mt-4'>₹10900.00*</div>
-            <div className='text-[20px]  font-[font2] ml-20 mt-2 flex gap-10'>
+            <div className='text-[30px] max-md:ml-15 ml-25  font-[font2]'>HomePod mini</div>
+            <div className='text-[60px] w-150 text-center leading-12 -ml-25 max-md:text-[40px]   max-md:-ml-12    max-md:w-100  font-[font2]'>Surprising sound for its size.</div>
+            <div className='text-[30px] ml-20  max-md:mt-2 font-[font2] -mt-4'>₹10900.00*</div>
+            <div className='text-[20px]  font-[font2] ml-20 mt-2 max-md:ml-10 flex gap-10'>
                 <div className='bg-blue-600 rounded-full   p-1  px-5'>Buy</div>
                 <div className='  flex items-center text-blue-600 hover:underline'>Learn More <ChevronRight/></div>
             </div>
             </div>
             </div>
-            <img className='h-[100vh]  w-[48vw] mt-65 rounded-3xl relative object-cover' src="https://www.apple.com/v/tv-home/q/images/overview/room_filling_sound__zagu3551kwyi_medium.jpg" alt="" />
+            <img className='h-[100vh]  w-[48vw] mt-65 rounded-3xl max-md:w-[50vh] relative max-md:mt-25 
+            h-[20vh]
+            object-contain ' src="https://www.apple.com/v/tv-home/q/images/overview/room_filling_sound__zagu3551kwyi_medium.jpg" alt="" />
             
         </div>
        
@@ -77,33 +80,33 @@ const Topboxes = () => {
 
 
       
-      <div ref={secondRef} className='flex p-2 gap-5 rounded-3xl'>
-        <div className=' rounded-3xl h-[100vh]   w-[48vw] bg-white text-black  '>
-            <div className='absolute rounded-3xl  flex ml-20  mt-3 '>
+      <div ref={secondRef} className='flex max-md:grid  p-2 gap-5 rounded-3xl'>
+        <div className=' rounded-3xl h-[100vh]   w-[48vw] max-md:w-[95vw] max-md:h-[70vh] bg-white text-black  '>
+            <div className='absolute rounded-3xl  flex ml-20 max-md:ml-2  mt-3 '>
                 <div>
-            <div className='text-[45px] text-center w-[38vw]  font-[font1]'>The Apple experience.
+            <div className='text-[45px] text-center w-[38vw] max-md:w-[89vw] max-md:text-[30px] max-md:text-center  font-[font1]'>The Apple experience.
 Cinematic in every sense.</div>
             
-            <div className='text-[30px]  ml-40 font-[font2] '>Starting at $129</div>
-            <div className='text-[20px] font-[font2] ml-40 mt-2 flex gap-5'>
+            <div className='text-[30px] max-md:ml-15  ml-40 font-[font2] '>Starting at $129</div>
+            <div className='text-[20px] font-[font2] ml-40 mt-2 max-md:ml-10 flex gap-5'>
                 <div className='bg-blue-600 rounded-full  p-1  px-5'>Buy</div>
                 <div className='flex items-center text-blue-600 hover:underline'>Learn More <ChevronRight/></div>
             </div>
             </div>
             </div>
             <div className='flex justify-center mt-10'>
-            <img className='h-[60vh]  rounded-3xl relative object-cover mt-50' src="https://www.apple.com/v/tv-home/q/images/overview/apple_tv_4k__b30wcqp0pdle_medium.jpg" alt="" />
+            <img className='h-[60vh]  rounded-3xl relative object-cover max-md:mt-20 max-md:object-contain mt-50' src="https://www.apple.com/v/tv-home/q/images/overview/apple_tv_4k__b30wcqp0pdle_medium.jpg" alt="" />
             </div>
             
         </div>
-        <div className=' rounded-3xl h-[100vh]   w-[48vw] bg-white  '>
-            <div className='absolute  flex right-20 text-black mt-3 '>
+        <div className=' rounded-3xl h-[100vh]   w-[48vw] bg-white  max-md:w-[95vw] max-md:h-[70vh] '>
+            <div className='absolute  flex  right-20 text-black mt-3 max-md:right-1'>
                 <div>
-            <div className='text-[50px]  text-center leading-12 ml-25  font-[font2]'>Home app</div>
-            <div className='text-[30px] ml-25 font-[font2]'>The foundation
+            <div className='text-[50px]  text-center leading-12 ml-25 max-md:ml-20  font-[font2]'>Home app</div>
+            <div className='text-[30px] ml-25 font-[font2] max-md:text-center max-md:mt-3 max-md:leading-8'>The foundation
 for a smarter home.</div>
-            <div className='text-[30px] ml-60  mt-2 font-[font2] -mt-4'>₹10900.00*</div>
-            <div className='text-[20px]  font-[font2] ml-60 mt-2 flex gap-5'>
+            <div className='text-[30px] ml-60  mt-2 font-[font2] max-md:ml-40 -mt-4'>₹10900.00*</div>
+            <div className='text-[20px]  font-[font2] ml-60 mt-2 max-md:ml-30 flex gap-5'>
                 <div className='bg-blue-600 rounded-full   p-1  px-5'>Buy</div>
                 <div className='  flex items-center text-blue-600 hover:underline'>Learn More <ChevronRight/></div>
             </div>
@@ -111,7 +114,7 @@ for a smarter home.</div>
             </div>
             <div className='flex mt-5 justify-center'>
 
-            <img className='h-[50vh]  ml-20 mt-65 rounded-3xl relative object-cover' src="https://www.apple.com/v/tv-home/q/images/overview/homeapp__cpc1k972xys2_medium.jpg" alt="" />
+            <img className='h-[50vh]  ml-20 mt-65 rounded-3xl max-md:object-contain max-md:mt-40 relative object-cover' src="https://www.apple.com/v/tv-home/q/images/overview/homeapp__cpc1k972xys2_medium.jpg" alt="" />
             </div>
             
         </div>
