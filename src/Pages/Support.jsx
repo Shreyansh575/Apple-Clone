@@ -106,7 +106,7 @@ const Support = () => {
             <div className='flex max-md:grid rounded-3xl bg-white max-md:ml-5 max-md:w-[88vw] max-md:h-[90vh] ml-50 max-md:p-1  w-[70vw]'>
                 <img className='w-[40vw] rounded-l-3xl h-[80vh] max-md:w-[100vw] max-md:h-[60vh] max-md:object-contain max-md:mt-[40vh] max-md:rounded-4xl object-cover' src="https://support.apple.com/content/dam/edam/applecare/images/en_US/psp/psp_content/tile-side-applecare.image.large_2x.png" alt="" />
                 <div className='flex flex-col justify-center max-md:-mt-[140vh]'>
-                    <div className='text-[50px] text-center leading-13 font-[font7]'>Handled with AppleCare</div>
+                    <div className='text-[50px] text-center leading-13 max-md:text-[40px] max-md:-mt-10 font-[font7]'>Handled with AppleCare</div>
                     <div className='text-left text-[18px] text-gray-700 mt-4 px-9 '>Every AppleCare plan provides one-stop service for your Apple products, with quick and easy repairs for accidents like drops and spills. You’re also covered if your iPhone, iPad, or Apple Watch is lost or stolen.</div>
                     <div className='mt-10 flex text-blue-600 hover:underline  px-10 max-md:mt-3'>Learn More <ChevronRight/></div>
                 </div>
