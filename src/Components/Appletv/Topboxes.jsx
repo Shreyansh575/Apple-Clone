@@ -61,7 +61,7 @@ const Topboxes = () => {
                 <div>
             <div className='text-[30px] max-md:ml-15 ml-25  font-[font2]'>HomePod mini</div>
             <div className='text-[60px] w-150 text-center leading-12 -ml-25 max-md:text-[40px]   max-md:-ml-12    max-md:w-100  font-[font2]'>Surprising sound for its size.</div>
-            <div className='text-[30px] ml-20  max-md:mt-2 font-[font2] -mt-4'>₹10900.00*</div>
+            <div className='text-[30px] ml-25  max-md:mt-2 font-[font2] -mt-0'>₹10900.00*</div>
             <div className='text-[20px]  font-[font2] ml-20 mt-2 max-md:ml-10 flex gap-10'>
                 <div className='bg-blue-600 rounded-full   p-1  px-5'>Buy</div>
                 <div className='  flex items-center text-blue-600 hover:underline'>Learn More <ChevronRight/></div>
