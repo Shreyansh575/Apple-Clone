@@ -31,11 +31,11 @@ const Watchslider = () => {
                     data.map((elem)=>{
                         return(
                             <div>
-                                <img className='h-[60vh] max-md:min-w-[100vw]' src={elem.img} alt="" />
+                                <img className='h-[60vh] max-md:h-[50vh] max-md:min-w-[100vw]' src={elem.img} alt="" />
                                 <div>
-                                    <div className='text-center mt-5 text-[30px] font-[font7]'>{elem.name}</div>
-                                    <div className='text-center mt-5 text-[23px]  '>{elem.info}</div>
-                                    <div className='text-center mt-10 text-[18px] text-center font-[font7] '>{elem.price}</div>
+                                    <div className='text-center mt-5 text-[30px] max-md:text-[26px] font-[font7]'>{elem.name}</div>
+                                    <div className='text-center mt-5 text-[23px] max-md:text-[20px] '>{elem.info}</div>
+                                    <div className='text-center mt-10 text-[18px] max-md:text-[15px]text-center font-[font7] '>{elem.price}</div>
                                 </div>
 <div className='flex mt-8 items-center justify-evenly'>
     <div className='bg-blue-500 p-3 rounded-full'>Learn More</div>
