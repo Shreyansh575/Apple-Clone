@@ -46,8 +46,8 @@ const Fitness = () => {
             <div>Made to move. &nbsp;</div>
             <div className='text-gray-500'> Level up your health and fitness.</div>
         </div>
-      <div  className='overflow-x-hidden'>
-        <div ref={scrollRef} className='ml-40 relative mt-10 max-md:ml-5 max-md:overflow-auto  flex gap-5'>
+      <div  className='overflow-hidden  md:w-[100vw]'>
+        <div ref={scrollRef} className='ml-40 relative mt-10 max-md:ml-5 max-md:overflow-x-auto  flex gap-5'>
             {data.map((elem)=>{
                 return(
                     <div className='h-[90vh] max-md:h-[80vh] rounded-3xl bg-white'>

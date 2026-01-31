@@ -108,14 +108,10 @@ const Support = () => {
                 <div className='flex flex-col justify-center max-md:-mt-[140vh]'>
                     <div className='text-[50px] text-center leading-13 max-md:text-[40px] max-md:-mt-10 font-[font7]'>Handled with AppleCare</div>
                     <div className='text-left text-[18px] text-gray-700 mt-4 px-9 '>Every AppleCare plan provides one-stop service for your Apple products, with quick and easy repairs for accidents like drops and spills. You’re also covered if your iPhone, iPad, or Apple Watch is lost or stolen.</div>
-                    <div className='mt-10 flex text-blue-600 hover:underline  px-10 max-md:mt-3'>Learn More <ChevronRight/></div>
+                    <div className='mt-10 flex text-blue-600 hover:underline  px-10 max-md:mt-3 max-md:hidden'>Learn More <ChevronRight/></div>
                 </div>
             </div>
             </div>
-
-
-
-
 
             <div className='bg-[#f8f8f9] p-2 py-8  mt-10 '>
             <div className='flex rounded-3xl bg-white max-md:h-[67vh] ml-40 max-md:ml-1 max-md:grid  w-[80vw] max-md:w-[94vw]'>

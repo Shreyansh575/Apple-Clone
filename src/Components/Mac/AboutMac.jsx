@@ -69,7 +69,8 @@ const AboutMac = () => {
       {
         scrollTrigger: {
           trigger: enterRef.current,
-          start: "top 30%",
+          start: "top 65%",
+          
         },
         y: 0,
         opacity: 1,
@@ -105,7 +106,7 @@ const AboutMac = () => {
             })}
           </div>
         </div>
-      <div className="absolute right-0 mr-10  mt-10 gap-5 max-md:hidden flex">
+      <div className="relative ml-300 mr-10  mt-10 gap-5 max-md:hidden flex">
         <div onClick={()=>{
           setcount(count+350)
         }} className=""><ChevronLeft size={50}/></div>

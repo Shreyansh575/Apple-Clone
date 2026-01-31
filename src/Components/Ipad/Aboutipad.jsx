@@ -24,7 +24,8 @@ const Aboutipad = () => {
             scrollTrigger:{
                 trigger:enterRef.current,
                 
-                start:'top 30%',
+                start:'top 80%',
+                
                
             },
             y:0,
@@ -82,7 +83,7 @@ const Aboutipad = () => {
 
 
   return (
-    <div className='h-[160vh] max-md:h-[110vh]  p-1'>
+    <div className='h-[110vh] max-md:h-[110vh]  p-1'>
       <div ref={enterRef}>
         <div className='ml-30 max-md:ml-5 text-6xl font-[font2] mt-35'>Get to know iPad.</div>
         <div className='overflow-hidden'>
@@ -99,7 +100,7 @@ const Aboutipad = () => {
             </div>
         </div>
       </div>
-      <div className="absolute mt-9 max-md:hidden  flex gap-2 right-0">
+      <div className="relative mt-9 max-md:hidden  flex gap-2 ml-300">
                     <div onClick={()=>{
                         setcount(count+350)
                     }}><ChevronLeft size={60}/></div>

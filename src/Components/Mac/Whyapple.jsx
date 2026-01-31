@@ -93,7 +93,7 @@ const Whyapple = () => {
         <div>Place to buy Mac.</div>
       </div>
       <div className="overflow-x-hidden">
-        <div ref={scrollRef} className="ml-30 max-md:ml-0 overflow-x-auto mt-8 max-md:mt-15 flex space-x-5">
+        <div ref={scrollRef} className="ml-30 max-md:ml-0 max-md:overflow-x-auto mt-8 max-md:mt-15 flex space-x-5">
           {data.map((elem) => {
             return (
               <div  className="h-70  min-w-90 p-5 rounded-3xl px-10 bg-white">

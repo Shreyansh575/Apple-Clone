@@ -29,7 +29,7 @@ useEffect(() => {
       if (prev === 4) return 0; // 👈 reset
       return prev + 1;
     });
-  }, 2500);
+  }, 1200);
 
   return () => clearInterval(intervalone); // ✅ cleanup
 }, []);
@@ -51,11 +51,11 @@ useEffect(() => {
             <div className='text-blue-600 border-1 p-1 hover:bg-blue-600 hover:text-white  px-5 rounded-full'>Buy</div>
         </div>
       </div>
-      <div className='relative shadow-lg  top-70  '>
-        <div className='px-2'>
-        <video autoPlay loop playsInline className='rounded-4xl max-md:min-h-[120vh] max-md:min-w-[100vw] max-md:rounded-2xl object-cover relative' src="https://www.apple.com/105/media/us/airpods/2024/b4e8e99e-af2c-413e-84d4-50a9a5ee4fe3/anim/airpods/medium.mp4"></video>
+      <div className='relative shadow-lg max-md:-ml-2   top-70  '>
+        <div className='px-2 max-md:ml-0'>
+        <video autoPlay loop playsInline className='rounded-4xl max-md:min-h-[120vh] max-md:min-w-[100vw] max-md:rounded-2xl object-cover relative md:ml-10 md:w-[92vw]' src="https://www.apple.com/105/media/us/airpods/2024/b4e8e99e-af2c-413e-84d4-50a9a5ee4fe3/anim/airpods/medium.mp4"></video>
         </div>
-        <div className='absolute max-md:-mt-80 text-white -mt-50 ml-10'>
+        <div className='absolute max-md:-mt-80 text-white -mt-48 ml-16'>
             <div className='text-7xl max-md:text-center font-[font7]'>AirPods 4</div>
             <div className='text-2xl max-md:text-center font-[font7]'>Iconic. Now supersonic.</div>
             <div className='text-xl max-md:text-center mt-3 font-[font7]'>Starting at $129
@@ -64,14 +64,14 @@ With Active Noise Cancellation $179
 
 </div>
         </div>
-        <div className='flex absolute z-500 justify-end gap-3 items-center right-22 -mt-30 '>
+        <div className='flex absolute z-500 justify-end gap-3 items-center right-22 -mt-30 max-md:-mt-13 '>
             <div className='bg-blue-600 rounded-full p-2 px-3 w-27 text-white '>Learn More</div>
             <div className='text-blue-600 border-1 p-1 hover:bg-blue-600 hover:text-white  px-5 rounded-full'>Buy</div>
         </div>
       </div>
 
-      <div className='relative p-1 px-10 max-md:px-3 top-80 bg-[#e3e3e3]'>
-        <div className='mt-30 flex rounded-4xl bg-white h-[95vh] max-md:w-[90vw]  justify-center '>
+      <div className='relative p-1 px-10  max-md:px-1 top-80 bg-[#e3e3e3]'>
+        <div className='mt-30 flex rounded-4xl bg-white h-[95vh] max-md:w-[98vw]  justify-center '>
            <div className='text-[200px] font-[font1] mt-25 max-md:text-[100px] max-md:leading-21 max-md:text-center max-md:mt-60  relative'>
             AirPods Max
            </div>

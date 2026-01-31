@@ -74,7 +74,7 @@ const Ipadmid = () => {
             })}
           </div>
         </div>
-                    <div className="absolute mt-5   flex gap-2 max-md:hidden right-0">
+                    <div className="relative mt-5   flex gap-2 max-md:hidden ml-300">
                     <div onClick={()=>{
                         setcount(count+350)
                     }}><ChevronLeft size={60}/></div>
