@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Lenis from 'lenis'
 import Topcontent from '../Components/Home/Topcontent'
 import Topimgslider from '../Components/Home/Topimgslider'
 import Newarrivals from '../Components/Home/Newarrivals'
@@ -8,6 +9,7 @@ import Accecories from '../Components/Home/Accecories'
 import Fitness from '../Components/Home/Fitness'
 
 const Home = () => {
+  
   return (
     <div className='overflow-auto max-md:w-screen  h-full'>
             <div className=" absolute mt-13 max-md:hidden  w-screen h-[50px]

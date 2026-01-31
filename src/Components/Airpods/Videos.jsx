@@ -71,7 +71,7 @@ With Active Noise Cancellation $179
       </div>
 
       <div className='relative p-1 px-10  max-md:px-1 top-80 bg-[#e3e3e3]'>
-        <div className='mt-30 flex rounded-4xl bg-white h-[95vh] max-md:w-[98vw]  justify-center '>
+        <div className='mt-30 flex rounded-4xl bg-white h-[155vh] max-md:w-[98vw]  justify-center '>
            <div className='text-[200px] font-[font1] mt-25 max-md:text-[100px] max-md:leading-21 max-md:text-center max-md:mt-60  relative'>
             AirPods Max
            </div>

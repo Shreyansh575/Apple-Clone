@@ -21,7 +21,7 @@ const Appleworld = () => {
       </div>
       <div className='p-20 max-md:p-5 max-md:py-20'>
 
-      <div className='min-h-[110vh]   rounded-[3vw] bg-gray-100 flex max-md:w-[90vw] max-md:ml-0  max-md:grid   justify-between'>
+      <div className='min-h-[160vh]   rounded-[3vw] bg-gray-100 flex max-md:w-[90vw] max-md:ml-0  max-md:grid   justify-between'>
         <div className='w-[50%] max-md:w-[90vw] space-y-5 mt-30 max-md:mt-5 flex-col p-10 '>
             <div onClick={()=>{
                   setcount(1)

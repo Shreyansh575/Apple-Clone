@@ -29,7 +29,7 @@ const Appleworld = () => {
       </div>
       <div className='p-20  max-md:px-3 '>
 
-      <div className='min-h-[110vh] max-md:w-[92vw]  rounded-[3vw] max-md:min-h-[130vh] bg-white
+      <div className='min-h-[160vh] max-md:w-[92vw]  rounded-[3vw] max-md:min-h-[130vh] bg-white
        flex    justify-between'>
         <div className='w-[50%] max-md:w-[92%] space-y-5 mt-30 flex-col  p-10 '>
             <div onClick={()=>{
